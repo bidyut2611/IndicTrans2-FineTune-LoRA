@@ -21,6 +21,8 @@ Hindi → Gujarati	✅ Complete	~38k	53.01	74.97
 Hindi → Marathi	✅ Complete	~32k	47.64	74.41
 Hindi → Kashmiri	✅ Complete	~34k	18.74	47.55
 Hindi → Telugu	⏳ Training	~44k	Pending	Pending
+
+
 📂 Repository Structure
 ├── fine_tune_hin_guj/       # Output & Scripts for Gujarati
 ├── fine_tune_hin_mar/       # Output & Scripts for Marathi
@@ -31,7 +33,7 @@ Hindi → Telugu	⏳ Training	~44k	Pending	Pending
 🚀 Setup & Installation
 Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/IndicTrans2-FineTuning.git
+git clone https://github.com/bidyut2611/IndicTrans2-FineTuning.git
 cd IndicTrans2-FineTuning
 Install Dependencies:
 
