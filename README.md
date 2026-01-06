@@ -56,6 +56,9 @@ from IndicTransToolkit import IndicProcessor
 # Choose language code: "guj_Gujr", "mar_Marq", "kas_Arab", "tel_Telu"
 target_lang = "guj_Gujr" 
 adapter_path = "fine_tune_hin_guj/results/output" # Path to your fine-tuned adapter
+
+
+
 # 2. Load Models
 model_name = "ai4bharat/indictrans2-indic-indic-1B"
 tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
@@ -77,6 +80,8 @@ with torch.no_grad():
 decoded = tokenizer.batch_decode(generated, skip_special_tokens=True)
 translations = ip.postprocess_batch(decoded, lang=target_lang)
 print("Translation:", translations[0])
+
+
 📜 Dataset Information
 The dataset consists of domain-specific sentence pairs (Government, Education, Agriculture) cleaned and split into 90% Training and 10% Validation sets.
 
